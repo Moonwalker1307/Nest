@@ -13,6 +13,7 @@ In Claude Code:
 ```
 /plugin marketplace add Moonwalker1307/Nest
 /plugin install nest-core@nest
+/plugin install dotnet@nest
 ```
 
 Skill folders also work on their own: upload a skill folder to claude.ai
@@ -39,6 +40,7 @@ templates/skill/SKILL.md          starter template for a new skill
 | Plugin | What it has |
 | --- | --- |
 | `nest-core` | `commit-messages` skill, `/explain` command |
+| `dotnet` | `dotnet-11` skill: .NET 11 and C# 15 features |
 
 ## Adding things
 

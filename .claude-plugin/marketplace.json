@@ -12,6 +12,12 @@
       "source": "./plugins/nest-core",
       "description": "Everyday skills and commands for general development work.",
       "version": "0.1.0"
+    },
+    {
+      "name": "dotnet",
+      "source": "./plugins/dotnet",
+      "description": "Skills for writing modern .NET and C# code, starting with .NET 11 and C# 15.",
+      "version": "0.1.0"
     }
   ]
 }
