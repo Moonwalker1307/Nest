@@ -1,0 +1,17 @@
+{
+  "name": "nest",
+  "owner": {
+    "name": "Moonwalker1307"
+  },
+  "metadata": {
+    "description": "Skills, plugins and other things for working with AI."
+  },
+  "plugins": [
+    {
+      "name": "nest-core",
+      "source": "./plugins/nest-core",
+      "description": "Everyday skills and commands for general development work.",
+      "version": "0.1.0"
+    }
+  ]
+}
