@@ -19,7 +19,8 @@ description: Write, review or upgrade C# and .NET code that targets .NET 11 (net
    - [references/runtime-sdk.md](references/runtime-sdk.md): runtime async, hardware baseline, file-based apps, `dotnet run`/`test`/`sln`, containers.
    - [references/aspnetcore-efcore.md](references/aspnetcore-efcore.md): ASP.NET Core 11 and EF Core 11.
    - [references/breaking-changes.md](references/breaking-changes.md): read this when upgrading a project to .NET 11.
-4. If a feature you need is not in these files, check https://learn.microsoft.com/dotnet/core/whats-new/dotnet-11/overview rather than guessing.
+4. For C# 14 and .NET 10 features (extension blocks, `field`, `?.` assignment, file-based apps basics, `LeftJoin`), use the `dotnet-10` skill. They all still apply in .NET 11.
+5. If a feature you need is not in these files, check https://learn.microsoft.com/dotnet/core/whats-new/dotnet-11/overview rather than guessing.
 
 ## Quick guide: prefer these in net11.0 code
 

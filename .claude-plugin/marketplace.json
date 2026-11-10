@@ -16,8 +16,8 @@
     {
       "name": "dotnet",
       "source": "./plugins/dotnet",
-      "description": "Skills for writing modern .NET and C# code, starting with .NET 11 and C# 15.",
-      "version": "0.1.0"
+      "description": "Skills for writing modern .NET and C# code: .NET 10 / C# 14 and .NET 11 / C# 15, plus upgrades from .NET 8 and 9.",
+      "version": "0.2.0"
     }
   ]
 }
