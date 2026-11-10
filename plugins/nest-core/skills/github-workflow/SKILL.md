@@ -15,7 +15,15 @@ Every change, however small, goes on its own branch and lands through a pull req
 
 Every branch name says what is being committed on it.
 
-- Format: `<type>/<short-description>` in lowercase kebab-case, for example `feat/github-workflow-skill`, `fix/safari-export-button`, `docs/install-steps`.
+Check the repository's own rules first, and follow them where they exist:
+
+- `CONTRIBUTING.md` (root, `.github/` or `docs/`), `CLAUDE.md`, `AGENTS.md`, and the README.
+- Branch name patterns in rulesets or branch protection (`gh api repos/{owner}/{repo}/rulesets`), and any CI or hook that checks branch names.
+- The names of recent branches and merged PRs (`git branch -r`, `gh pr list --state merged`), when they clearly share a convention.
+
+If the repository has a convention, use it, as long as the name still says what is being committed. If it has none, use the default below.
+
+- Default format: `<type>/<short-description>` in lowercase kebab-case, for example `feat/github-workflow-skill`, `fix/safari-export-button`, `docs/install-steps`.
 - Types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`.
 - The description names the actual change, in 2 to 5 words. Never use generic names such as `update`, `changes`, `wip`, `patch-1`, `my-branch`, or names made only of ids, dates or random suffixes.
 - If an issue exists, the number may be added to the end: `fix/login-timeout-42`.
