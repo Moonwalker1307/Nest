@@ -27,6 +27,7 @@ If the repository has a convention, use it, as long as the name still says what 
 - Types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`.
 - The description names the actual change, in 2 to 5 words. Never use generic names such as `update`, `changes`, `wip`, `patch-1`, `my-branch`, or names made only of ids, dates or random suffixes.
 - If an issue exists, the number may be added to the end: `fix/login-timeout-42`.
+- Never reuse a branch name. Each branch name is used for exactly one piece of work, even after its PR is merged or closed and the branch is deleted. Follow-up work gets a new branch with a new name (for example `fix/login-timeout-retry` after `fix/login-timeout`). Before creating a branch, check the name is unused: `git ls-remote --heads origin <name>` and `gh pr list --state all --head <name>` should both return nothing.
 - If the work on a branch changes direction, rename the branch before opening a PR (`git branch -m <new-name>`, then push the new name and delete the old remote branch).
 - If a tool or environment assigns a branch name you must use, keep it, and make the PR title say what is being committed instead.
 
@@ -97,7 +98,7 @@ Delete the branch, both on GitHub and locally:
 - Never push straight to the default branch.
 - Never squash merge.
 - Rebase rather than merge to update a branch.
-- Branch names always describe the change.
+- Branch names always describe the change and are never reused.
 - One purpose per PR, and every commit stands on its own.
 - Never commit secrets; rotate any that leak.
 - Never merge with red CI or a changes-requested review.
