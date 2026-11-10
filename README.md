@@ -39,7 +39,7 @@ templates/skill/SKILL.md          starter template for a new skill
 
 | Plugin | What it has |
 | --- | --- |
-| `nest-core` | `commit-messages` skill, `/explain` command |
+| `nest-core` | `commit-messages` and `github-workflow` skills, `/explain` command |
 | `dotnet` | `dotnet-11` skill: .NET 11 and C# 15 features |
 
 ## Adding things
