@@ -87,11 +87,12 @@ Never squash merge.
 
 ## After merging
 
-Delete the branch, both on GitHub and locally:
+Delete the branch, both on GitHub and locally.
 
-- `gh pr merge` with `--delete-branch`, or `git push origin --delete <branch>`
-- `git switch <base> && git pull && git branch -d <branch>`
-- `git fetch --prune` to drop stale remote-tracking branches.
+1. Check whether the repository deletes head branches automatically on merge ("Automatically delete head branches" in the repo settings): `gh api repos/{owner}/{repo} --jq .delete_branch_on_merge`.
+   - `true`: GitHub has already deleted the remote branch. Don't delete it again.
+   - `false`: delete it yourself, with `gh pr merge --delete-branch` or `git push origin --delete <branch>`.
+2. Clean up locally either way: `git switch <base> && git pull && git branch -d <branch>`, then `git fetch --prune` to drop stale remote-tracking branches.
 
 ## Rules
 
